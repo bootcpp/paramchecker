@@ -2,11 +2,11 @@
 #include <gtest/gtest.h>
  
 TEST(VitalsTest, BPM) { 
-    ASSERT_EQ(true, bpmAreOk(100, 100, 50));
+    ASSERT_EQ(true, bpmAreOk(100));
 }
  
 TEST(VitalsTest, SPO2) {
-    ASSERT_EQ(false, spoAreOk(100, 40, 50));
+    ASSERT_EQ(false, spoAreOk(40));
 }
  
 int main(int argc, char **argv) {
