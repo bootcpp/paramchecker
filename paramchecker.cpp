@@ -18,3 +18,12 @@ bool respRateOk(float respRate){
   }
   return true;
 }
+
+bool vitalsAreOk(float bpm, float spo2, float respRate) {
+  
+  bool bpm_flag = bpmAreOk(bpm);
+  bool spo2_flag =  spoAreok(spo2);
+  bool respRate_flag = respRateOk(respRate);
+  
+  return(bpm_flag && spo2_flag && respRate_flag);
+}
