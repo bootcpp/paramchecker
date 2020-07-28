@@ -1,5 +1,5 @@
 bool vitalIsOk(float min, float max, float value){
-  return !(val < min || val > max) ;  
+  return !(value < min || value > max) ;  
 }
 
 bool vitalsAreOk(float bpm, float spo2, float respRate) {
